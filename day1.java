@@ -4,7 +4,17 @@
 import java.io.*;
 
 class DayOne {
+  private static void printZooInfo(boolean isWeekend) {
+    final int giraffe = 4;
+    final long lemur;
+    if (isWeekend)
+      lemur = 5;
+    else
+      lemur = 3;
+    System.out.println(giraffe + " " + lemur);
+  }
+
   public static void main(String[] args) {
-    System.out.println("Hello Java");
+    printZooInfo(true);
   }
 }
