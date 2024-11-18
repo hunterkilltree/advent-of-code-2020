@@ -14,7 +14,7 @@ public class MergeSortImplement {
   private static void mergeSort(int[] arr, int l, int r) {
     if (l < r) {
       int mid = l + (r - l) / 2;
-
+      // Sort first and second halves
       mergeSort(arr, l, mid);
       mergeSort(arr, mid + 1, r);
       merge(arr, l, mid, r);
